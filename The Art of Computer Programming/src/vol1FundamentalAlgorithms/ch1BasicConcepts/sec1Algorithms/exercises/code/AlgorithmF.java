@@ -1,6 +1,6 @@
 package vol1FundamentalAlgorithms.ch1BasicConcepts.sec1Algorithms.exercises.code;
 
-public class Exercise3 {
+public class AlgorithmF {
 	/*
 	 * Algorithm F
 	 * 

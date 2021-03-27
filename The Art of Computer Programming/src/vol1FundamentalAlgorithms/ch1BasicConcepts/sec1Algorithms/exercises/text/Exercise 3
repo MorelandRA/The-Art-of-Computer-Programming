@@ -1,0 +1,16 @@
+[20]
+Change Algorithm E (for the sake of efficiency) so that all trivial 
+replacement operations such as "m <- n" are avoided. Write this new
+algorithm in the style of Algorithm E, and call it Algorithm F
+
+A coded version is found in exercises/code/AlgorithmF.java
+
+Algorithm F (Euclid's Algorithm). Given two positive integers m and n, find
+their greatest common denominator, that is, the largest positive integer that
+evenly divides both m and n.
+
+F1. [Find remainder] Divide m by n and let m be the remainder.
+F2. [Is it zero?] if m = 0, the algorithm terminates; n is the answer.
+F3. [Find remainder] Divide n by m and let n be the remainder.
+F4. [Is it zero?] if n = 0, the algorithm terminates; m is the answer.
+F5. [Repeat] go back to step F1. |
