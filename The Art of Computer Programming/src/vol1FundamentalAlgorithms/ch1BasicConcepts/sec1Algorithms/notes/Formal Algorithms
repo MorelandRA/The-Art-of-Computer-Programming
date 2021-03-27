@@ -1,0 +1,26 @@
+8
+
+In these notes, I'll be using O to represent capital omega, as it's written
+in the book
+
+Let a computational method be defined as (Q,I,O,f) where
+Q represents the states of computation
+I represents the input
+O represents the output
+f represents a computational rule
+
+Additionally, 
+Sets I and O are subsets of Q
+f maps Q onto Q
+f(q) = q for all q in the set of O (If a solution is an output, 
+	it should not change)
+
+Each input x in the set I defines a computational sequence such that
+x0 = x
+xk+1 = f(xk) for all k >= 0
+
+The computational sequence will terminate in k steps if k is the least value
+where xk is in omega
+
+Computational sequences might not end. Ones that terminate in a finite number
+of steps for all x in I are called algorithms.

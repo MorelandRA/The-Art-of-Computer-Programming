@@ -1,0 +1,38 @@
+7-8
+
+In these notes, I'll be using O to represent capital omega, as it's written
+in the book
+
+Similarly, I'll be using T for capital theta, w for lowercase omega, 
+p for lowercase phi, s for lowercase sigma, and o for lowercase alpha
+
+See "Formal Algorithms" for definitions of Q,I,O, and f
+
+Additionally, let
+A be a finite set of letters
+A* be all words that can be composed with those letters, max length x
+N >= 0 (This is like the number of unique steps; compare this to the list
+	of computational rules in "Algorithm E Formally")
+Q is ALSO, equivalently, the set of all (s, j)
+s is a word in A*
+0 <= j <= N (This is like the index of the steps; zero-based)
+I is the subset of Q where j == 0 (This is still the input, so in other words,
+	algorithms must start with j == 0)
+O is the subset of Q where j == N (This is still the output, so in other words,
+	algorithms must end with j == N)
+if T is in the set of A*
+	AND s has the form oTw for some o in A* and w in A*
+	Then it T occurs in S
+	(Put way more simply, T might be a substring of s)
+	
+The function f can be defined by Tj, pj (see below), and integers aj and bj
+
+f((s,j)) = (s,aj) if Tj isn't a substring of s
+f((s,j)) = (opjw, bj) if Tj is a substring of s
+^ If Tj is a substring of s, pj replaces Tj
+f((s,N)) = (s,N) 
+^ this is the same idea as f(q) = q in "Formal Algorithms".
+
+Don't overthink this. It's meant to be very open and flexible, it's far from
+a structure for algorithms. It's just a notation. Compare it to Turing machines.
+See Exercise 8 for an example

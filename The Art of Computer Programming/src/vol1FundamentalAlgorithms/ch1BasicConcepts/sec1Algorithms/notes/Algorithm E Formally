@@ -1,0 +1,22 @@
+8
+
+Algorithm E may be formalized as so:
+Let Q be the set of all singletons (n),
+	all ordered pairs (m,n),
+	all ordered quadruples (m,n,r,1),(m,n,r,2),(m,n,r,3)
+	
+where m, n, and p are positive integers
+r is a nonnegative integer
+
+Let I be the subset of all pairs (m,n) and let O be the subset of all 
+	singletons(n)
+
+Let f be defined as follows:
+	f((m,n)) = (m,n,0,1) <-- input
+	f((n)) = (n) <-- solution state
+	
+	f((m,n,r,1)) = (m,n,m%n,2);  <-- Find Remainder
+	f((m,n,r,2)) = (n) if r = 0 <-- Is it zero? Return if so
+	f((m,n,r,2)) = (m,n,r,3) otherwise <-- Else
+	f((m,n,p,3)) = (n,p,p,1) <-- set m <- n, n <- r, go back to step 1
+	^ in this step, we're using P because P is R without the possibility of 0, as in our definitions above
