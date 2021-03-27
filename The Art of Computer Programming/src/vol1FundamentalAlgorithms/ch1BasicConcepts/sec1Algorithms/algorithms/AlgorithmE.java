@@ -17,14 +17,16 @@ public class AlgorithmE {
 	public static void main(String[] args) {
 		long runTime = -System.nanoTime();
 
-		for(int i = 1; i < 10000; i++) {
-			for(int j = 1; j < 10000; j++) {
+		int imax = 10000;
+		int jmax = 10000;
+		for(int i = 1; i < imax; i++) {
+			for(int j = 1; j < jmax; j++) {
 				euclidsAlgorithm(i,j);
 			}
 		}
 
 		runTime += System.nanoTime();
-		System.out.println("\n\nRuntime: " + runTime/1000000000. + " seconds");
+		System.out.println("\n\nRuntime: " + runTime/(double)(imax*jmax*1000000000L) + " seconds");
 	}
 	
 	public static int euclidsAlgorithm(int m, int n) {
