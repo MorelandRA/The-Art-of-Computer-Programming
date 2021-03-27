@@ -1,0 +1,17 @@
+[16]
+What is the greatest common divisor of 2166 and 6099?
+
+Using the method in Exercise 3:
+
+M = 6099, N = 2166
+M <- (6099%2166 = 1767)
+M = 1767, N = 2166
+N <- (2166%1767 = 399)
+M = 1767, N = 399
+M <- (1767%399 = 171)
+M = 171, N = 399
+N <- (399%171 = 57)
+M = 171, N = 57
+171%57 = 0
+
+The GCD of 2166 and 6099 is 57.

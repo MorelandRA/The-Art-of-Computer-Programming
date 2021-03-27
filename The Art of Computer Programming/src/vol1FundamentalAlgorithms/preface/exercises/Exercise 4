@@ -1,0 +1,23 @@
+[HM45]
+Prove that when n is an integer, n>2, the equation x^n + y^n = z^n has no
+solution in positive integers x,y,z.
+
+For cases n <= 2:
+
+n=0
+x^0 + y^0 = z^0
+1 + 1 = 1
+Always false
+
+n=1
+x^1 + y^1 = z^1
+x + y = z
+For any chosen x or y, there is always a unique value z that satisfies the
+equation.
+
+n=2 
+x^2 + y^2 = z^2
+The pythagorean theorem. Only for some value x and y will there be a value z 
+that satisfies the equation.
+
+Known as Fermat's Last Theorem

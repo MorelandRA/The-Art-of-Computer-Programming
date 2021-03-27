@@ -1,0 +1,15 @@
+[15]
+Prove that m is always greater than n at the beginning of step E1, except
+possibly the first time this step occurs
+
+In the previous loop:
+m was n
+n was r
+
+r = m%n
+
+m%n is at most n-1
+
+Therefore r < n
+
+and in the new loop, n < m.

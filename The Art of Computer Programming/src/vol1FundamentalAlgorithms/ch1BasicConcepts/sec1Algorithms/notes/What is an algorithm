@@ -1,0 +1,27 @@
+Pages 4-6
+
+An algorithm has 5 important features:
+
+Finiteness
+An algorithm must always terminate after a finite number of steps
+A procedure that has all of the characteristics of an algorithm except that it
+possibly lacks finiteness is called a computational method
+All algorithms are computational methods
+
+Definiteness
+Each step of an algorithm must be precisely defined and unambiguous. 
+An expression of a computational method in a computer language is called
+a program
+
+Input
+An algorithm has zero or more inputs
+
+Output
+An algorithm has one or more outputs
+
+Effectiveness
+An algorithm is expected to be effective; all operations should be basic
+enough to be done in a finite length of time by someone using pencil and paper
+An algorithm for finding the greatest common denominator is not
+"Step one: find the greatest common denominator" because this is not a basic
+step.

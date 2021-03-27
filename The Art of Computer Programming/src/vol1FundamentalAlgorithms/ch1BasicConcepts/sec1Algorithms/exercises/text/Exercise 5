@@ -1,0 +1,23 @@
+[12]
+Show that the "Procedure for Reading This Set of Books" that appears after
+the preface actually fails to be a genuine algorithm on at least three of
+our five counts! Also mention some differences in format between it and
+Algorithm E.
+
+Finiteness: This computational method loops forever, and is not finite
+
+Definiteness: Many steps are ambiguous. What makes a chapter "interesting"? 
+	What is "mathematically inclined"?
+	
+Input: There are no inputs, but that's okay
+
+Output: There are no outputs, because the computational method never ends
+
+Effectiveness: Many steps are too complicated. "Work the recommended exercises
+	in this section in accordance with the hints given in the Notes on the 
+	Exercises", "report errors to the author".
+	
+Differences in format include:
+The steps are not identified by a letter and a number such as "E1"
+Steps are not summarized in brackets
+The computational method does not end in a thick bar |

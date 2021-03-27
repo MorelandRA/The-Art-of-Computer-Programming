@@ -1,0 +1,6 @@
+[14]
+Prove that 13^3 = 2197. Generalize your answer. [This is an example of a horrible
+kind of problem that the author has tried to avoid.]
+
+Factor the resulting number, in this case 2197. The factors are 13x13x13, which
+is equivalent to 13^3. Therefore, 13^3 = 2197.

@@ -1,0 +1,19 @@
+[HM21]
+Let Um be the average number of times that step E1 is executed in Algorithm E,
+if m is known and n is allowed to range over all positive integers. Show that
+Um is well defined. Is Um in any way related to Tm?
+
+Tm is described in exercise 6
+
+There are an infinite number of cases where n>m (and only a finite number where 
+n<m) so the infinite portion will take up the entirety of the average
+
+For all of these cases, the first step will be to swap m and n, since
+m%n = m when n>m
+
+Once M and N are flipped, we are now looking at the case where n is known and
+m is allowed to range over all positive integers (technically, all integers > n)
+
+The case described above is the same as Tm
+
+Therefore, Um = Tm+1.
