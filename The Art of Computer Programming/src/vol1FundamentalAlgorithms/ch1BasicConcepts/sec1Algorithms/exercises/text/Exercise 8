@@ -1,0 +1,102 @@
+[M25]
+Give an "effective" formal algorithm for computing the greatest common divisor
+of positive integers m and n, by specifying Tj, pj, aj, bj as in "Effective Formal
+Algorithms". Let the , input be represented by the string (a^m)(b^n), that is,
+m a's followed by n b's, Try to make your solution as simple as possible. [Hint:
+use Algorithm E, but instead of division in step E1, set r <- |m-n|,
+n <- min(m,n).]
+
+j  T  p  b  a
+0  ab    1  2
+1     c  0  0 //Alternating between steps 1 and 0 acts like m-n
+2  a  b  2  3 //Once m-n is done, replace all a's with b's
+3  c  a  3  4 //once all a's are b's, replace all c's with a's
+4  b  b  0  5 //if there are b's still, repeat. Else, the number of C's is the 
+				solution
+				
+				
+				
+Example: GCD(6,4)
+
+aaaaaabbbb
+j = 0
+aaaaabbb
+j = 1
+caaaaabbb
+j = 0
+caaaabb
+j = 1
+ccaaaabb
+j = 0
+ccaaab
+j = 1
+cccaaab
+j = 0
+cccaa
+j = 1
+ccccaa
+j = 0
+ccccaa
+j = 2
+ccccba
+j = 2
+ccccbb
+j = 2
+ccccbb
+j = 3
+acccbb
+j = 3
+aaccbb
+j = 3
+aaacbb
+j = 3
+aaaabb
+j = 3
+aaaabb
+j = 4
+aaaabb
+j = 0
+aaab
+j = 1
+caaab
+j = 0
+caa
+j = 1
+ccaa
+j = 0
+ccaa
+j = 2
+ccba
+j = 2
+ccbb
+j = 2
+ccbb
+j = 3
+acbb
+j = 3
+aabb
+j = 3
+aabb
+j = 4
+aabb
+j = 0
+ab
+j = 1
+cab
+j = 0
+c
+j = 1
+cc
+j = 0
+cc
+j = 2
+cc
+j = 3
+ac
+j = 3
+aa
+j = 4
+aa
+j = 5
+
+GCD = # of a's = 2
