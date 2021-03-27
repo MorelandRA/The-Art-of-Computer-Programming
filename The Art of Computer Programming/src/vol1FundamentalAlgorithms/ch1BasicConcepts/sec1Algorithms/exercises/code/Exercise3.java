@@ -12,18 +12,25 @@ public class Exercise3 {
 	 * 
 	 * This time, we'll swap M and N by doing both versions in the same loop
 	 * 
-	 * imagine C is the GCD, A is an arbitrary number, and B is a number less
+	 * Let C be the GCD, A be an arbitrary number, and B be a number less
 	 * than A that's also relatively prime to A
 	 * 
 	 * We are given A*C and B*C, and we want to find the GCD (which is always
-	 * C)
+	 * C, by definition)
+	 * 
+	 * A-B is relatively prime to A and B
 	 * 
 	 * Then, (A-B)*C also has the same GCD
 	 * 
 	 * By repeatedly subtracting B while keeping A positive, we can see that
 	 * (A%B)*C also has the same GCD.
 	 * 
+	 * A%B is relatively prime to A and B
+	 * 
 	 * And similarly, (B%(A%B))*C has the same GCD, and so on.
+	 * 
+	 * Eventually, because A and B are relatively prime of each other, 
+	 * that portion will decrease to 1 meaning we found the GCD: C.
 	 * 
 	 */
 	
