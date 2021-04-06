@@ -1,4 +1,4 @@
-package vol1FundamentalAlgorithms.ch1BasicConcepts.sec1Algorithms.algorithms;
+package vol1FundamentalAlgorithms.ch1BasicConcepts.sec1Algorithms.notes;
 
 public class AlgorithmE {
 	
