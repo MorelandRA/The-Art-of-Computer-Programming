@@ -1,4 +1,4 @@
-package vol1FundamentalAlgorithms.ch1BasicConcepts.sec1Algorithms.exercises.code;
+package vol1FundamentalAlgorithms.ch1BasicConcepts.sec1Algorithms.exercises;
 
 public class AlgorithmF {
 	/*
