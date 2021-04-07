@@ -1,0 +1,16 @@
+13-14
+
+Algorithm E (Extended Euclid's Algorithm). Given two positive integers m
+and n, we compute their greatest common denominator d, and we also compute
+two not-necessarily-positive integers a and b such that am+bn=d
+
+E1. [Initialize] Set a' <- b <- 1, a <- b' <- 0, c <- m, d <- n.
+E2. [Divide] let q and r be the quotient and the remainder of c/d.
+		(therefore c = qd+r and 0 <= r < d)
+E3. [Remainder zero?] If r = 0, the algorithm terminates; we have 
+		am + bn = d as desired.
+E4. [Recycle] Set c <- d, d <- r, t <- a', a' <- a, a <- t - qa, t <- b',
+		b' <- b, b <- t - qb, and go back to E2. |
+		
+If we ignore t, a, b, a', and b', we get the algorithm 1.1E.
+
