@@ -1,6 +1,7 @@
-11
+11-13
 
-Let P(n) be some statement about the integer n. Suppose we want to prove that P(n) is true
+Let P(n) be some statement about the integer n. Suppose we want to prove that 
+P(n) is true
 for any positive integer n. We could do this by proving
 
 1. P(1) is true
@@ -26,3 +27,11 @@ To use proof by induction:
 	Therefore P(n) is true
 	1+3+...+(2n-1) + (2n+1) = n^2 + (2n+1) = (n+1)^2
 	which proves that P(n+1) is also true.
+	
+Mathematical induction is different from scientific induction in that 
+scientific induction is a guess based on observation of certain properties.
+Mathematical induction is an actual proof. It is only inductive when deciding
+what we actually need to prove.
+
+In this book, induction will be used in the mathematical sense, not the
+scientific sense.
