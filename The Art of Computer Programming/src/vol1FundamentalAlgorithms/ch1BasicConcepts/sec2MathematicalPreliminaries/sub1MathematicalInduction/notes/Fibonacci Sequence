@@ -1,0 +1,45 @@
+13
+
+The Fibonacci sequence is defined as:
+F(0) = 0
+F(1) = 1
+F(n) = F(n-1) + F(n-2) for n >= 2
+
+let o represent ((1 + sqrt(5))/2)
+
+We will prove by induction that
+F(n) <= o^(n-1) for all positive integers n.
+Call this formula P(n)
+
+(a) Prove for P(1)
+
+F(1) = 1
+o^(1-1) = o^0 = 1
+F(1) <= o^(1-1)
+
+F(2) = 1
+
+o^(2-1) = o^1 = o > 1.6
+F(2) <= 1.6 <= o^(2-1)
+
+(b) Prove for P(n+1) if all P(1) ... P(n) are true
+
+Then P(n-1) and P(n) are true (This is why we also proved F(2) in (a))
+
+So F(n-1) < o^(n-2) and F(n) < o^(n-1)
+
+F(N+1) = F(n) + F(n-1) <= o^(n-2) + o^(n-1) = (1+o)o^(n-2)
+
+The important property of the number o, and the reason we chose this number,
+is that 1 + o = o^2
+
+So, (1+o)o^(n-2) = o^n, and F(N+1) <= o^n, which proves P(n+1), and completes
+our proof by induction.
+
+Proving P(2) directly was necessary because proving it by our inductive
+method would have required P(0) to be true, but it is not.
+
+It's worth noting that there is a closed form fibonacci sequence, so
+approximating it's growth (and overestimating) isn't really necessary
+
+http://mathonline.wikidot.com/a-closed-form-of-the-fibonacci-sequence
